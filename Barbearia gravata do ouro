@@ -1,15 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <title>Barbearia gravata do ouro</title>
+    <link rel="stylesheet" href="styles.css">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 </head>
 <body>
-   
+    <header>
+        <h1>Barbearia gravata do ouro</h1>
+        <nav>
+            <ul>
+                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="serviços">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Corte de cabelo</li>
+                <li>Barba</li>
+                <li>Tratamento capilar</li>
+                <li>Massagem no couro cabeludo</li>
+            </ul>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo à Barbearia gravata do ouro! Nossa equipe é dedicada a oferecer o melhor atendimento e serviços de qualidade.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contato-form">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Barbearia gravata do ouro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+document.getElementById('contato-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio normal do formulário
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    document.getElementById('resultado').innerHTML = `<p>Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.</p>`;
+
+    // Aqui você pode adicionar código para enviar os dados para um servidor, se necessário
+});
 </body>
 </html>
 
