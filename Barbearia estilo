@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia gravata do ouro</title>
+    <title>Barbearia estilo</title>
     <link rel="stylesheet" href="styles.css">
 body {
     font-family: Arial, sans-serif;
@@ -78,7 +78,7 @@ footer {
 </head>
 <body>
     <header>
-        <h1>Barbearia gravata do ouro</h1>
+        <h1>Barbearia gravata estilo</h1>
         <nav>
             <ul>
                 <li><a href="#serviços">Serviços</a></li>
@@ -101,7 +101,7 @@ footer {
 
         <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>Bem-vindo à Barbearia gravata do ouro! Nossa equipe é dedicada a oferecer o melhor atendimento e serviços de qualidade.</p>
+            <p>Bem-vindo à Barbearia estilo! Nossa equipe é dedicada a oferecer o melhor atendimento e serviços de qualidade.</p>
         </section>
 
         <section id="contato">
@@ -117,7 +117,7 @@ footer {
     </main>
 
     <footer>
-        <p>&copy; 2023 Barbearia gravata do ouro. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Barbearia estilo. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
